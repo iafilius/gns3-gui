@@ -97,7 +97,7 @@ class QemuVMPreferencesPage(QtWidgets.QWidget, Ui_QemuVMPreferencesPageWidget):
             QtWidgets.QTreeWidgetItem(section_item, ["QEMU binary:", os.path.basename(qemu_vm["qemu_path"])])
 
         # fill out the Hard disks section
-        if qemu_vm["hda_disk_image"] or qemu_vm["hdb_disk_image"] or qemu_vm["hdc_disk_image"] or qemu_vm["hdd_disk_image"]:
+        if qemu_vm["hda_disk_image"] or qemu_vm["hdb_disk_image"] or qemu_vm["hdc_disk_image"] or qemu_vm["hdd_disk_image"] or qemu_vm["hde_disk_image"] or qemu_vm["hdf_disk_image"] or qemu_vm["hdg_disk_image"] or qemu_vm["hdh_disk_image"]:
             section_item = self._createSectionItem("Hard disks")
             if qemu_vm["hda_disk_image"]:
                 QtWidgets.QTreeWidgetItem(section_item, ["Disk image (hda):", qemu_vm["hda_disk_image"]])
@@ -111,6 +111,18 @@ class QemuVMPreferencesPage(QtWidgets.QWidget, Ui_QemuVMPreferencesPageWidget):
             if qemu_vm["hdd_disk_image"]:
                 QtWidgets.QTreeWidgetItem(section_item, ["Disk image (hdd):", qemu_vm["hdd_disk_image"]])
                 QtWidgets.QTreeWidgetItem(section_item, ["Disk interface (hdd):", qemu_vm["hdd_disk_interface"]])
+            if qemu_vm["hde_disk_image"]:
+                QtWidgets.QTreeWidgetItem(section_item, ["Disk image (hde):", qemu_vm["hde_disk_image"]])
+                QtWidgets.QTreeWidgetItem(section_item, ["Disk interface (hde):", qemu_vm["hde_disk_interface"]])
+            if qemu_vm["hdf_disk_image"]:
+                QtWidgets.QTreeWidgetItem(section_item, ["Disk image (hdf):", qemu_vm["hdf_disk_image"]])
+                QtWidgets.QTreeWidgetItem(section_item, ["Disk interface (hdf):", qemu_vm["hdf_disk_interface"]])
+            if qemu_vm["hdg_disk_image"]:
+                QtWidgets.QTreeWidgetItem(section_item, ["Disk image (hdg):", qemu_vm["hdg_disk_image"]])
+                QtWidgets.QTreeWidgetItem(section_item, ["Disk interface (hdg):", qemu_vm["hdg_disk_interface"]])
+            if qemu_vm["hdh_disk_image"]:
+                QtWidgets.QTreeWidgetItem(section_item, ["Disk image (hdh):", qemu_vm["hdh_disk_image"]])
+                QtWidgets.QTreeWidgetItem(section_item, ["Disk interface (hdh):", qemu_vm["hdh_disk_interface"]])
             if qemu_vm["cdrom_image"]:
                 QtWidgets.QTreeWidgetItem(section_item, ["CD/DVD image:", qemu_vm["cdrom_image"]])
             if qemu_vm["bios_image"]:

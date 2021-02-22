@@ -320,6 +320,22 @@
             "enum": ["ide", "sata", "nvme", "scsi", "sd", "mtd", "floppy", "pflash", "virtio", "none"],
             "title": "Disk interface for the installed hdd_disk_image"
         },
+        "hde_disk_interface": {
+          "enum": ["ide", "sata", "nvme", "scsi", "sd", "mtd", "floppy", "pflash", "virtio", "none"],
+          "title": "Disk interface for the installed hde_disk_image"
+        },
+        "hdf_disk_interface": {
+          "enum": ["ide", "sata", "nvme", "scsi", "sd", "mtd", "floppy", "pflash", "virtio", "none"],
+          "title": "Disk interface for the installed hdf_disk_image"
+        },
+        "hdg_disk_interface": {
+          "enum": ["ide", "sata", "nvme", "scsi", "sd", "mtd", "floppy", "pflash", "virtio", "none"],
+          "title": "Disk interface for the installed hdg_disk_image"
+        },
+        "hdh_disk_interface": {
+          "enum": ["ide", "sata", "nvme", "scsi", "sd", "mtd", "floppy", "pflash", "virtio", "none"],
+          "title": "Disk interface for the installed hdh_disk_image"
+        },
         "arch": {
           "enum": ["aarch64", "alpha", "arm", "cris", "i386", "lm32", "m68k", "microblaze", "microblazeel", "mips", "mips64", "mips64el", "mipsel", "moxie", "or32", "ppc", "ppc64", "ppcemb", "s390x", "sh4", "sh4eb", "sparc", "sparc64", "tricore", "unicore32", "x86_64", "xtensa", "xtensaeb"],
           "title": "Architecture emulated"
@@ -465,6 +481,22 @@
               "hdd_disk_image": {
                 "type": "string",
                 "title": "Hdd diskimage"
+              },
+              "hde_disk_image": {
+                "type": "string",
+                "title": "Hde diskimage"
+              },
+              "hdf_disk_image": {
+                "type": "string",
+                "title": "Hdf diskimage"
+              },
+              "hdg_disk_image": {
+                "type": "string",
+                "title": "Hdg diskimage"
+              },
+              "hdh_disk_image": {
+                "type": "string",
+                "title": "Hdh diskimage"
               },
               "cdrom_image": {
                 "type": "string",
